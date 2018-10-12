@@ -1,0 +1,20 @@
+{
+  "name": "free-port",
+  "version": "1.0.0",
+  "description": "module to kill process on an occupied port ",
+  "main": "index.js",
+  "scripts": {
+    "test": "freeport"
+  },
+  "keywords": [
+    "freeport",
+    "free-port"
+  ],
+  "author": "\"Adeojo emmanuel, Adegoke david\"",
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^1.0.0",
+    "get-them-args": "^1.3.2",
+    "http": "0.0.0"
+  }
+}
