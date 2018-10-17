@@ -26,5 +26,5 @@ if(portres != validobject){
 module.exports = function (port) {
 	freeport(port)
 		.then(() => console.log(`Process on port ${port} killed`))
-		.catch(() => console.log(`Could not kill process on port ${port}`))
+		.catch((error) => console.error(error))
 }
