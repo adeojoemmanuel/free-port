@@ -10,7 +10,7 @@
 const args = require('get-them-args')(process.argv.slice(2))
 const portres = args.port || args.unknown
 
-console.log(portres)
+// console.log(portres)
 
 function checckobject(anyVar){
 	if(typeof anyVar == 'object' && anyVar instanceof Object && !(anyVar instanceof Array)){
