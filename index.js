@@ -15,10 +15,6 @@ function isEmpty(obj) {
     return true;
 }
 
-// function checckobject(){
-// 	typeof anyVar == 'object' && anyVar instanceof Object && !(anyVar instanceof Array) // false
-// }
-
 if(portres != validobject){
 	terminal(portres)
 }
