@@ -1,10 +1,9 @@
 /* eslint-env jest */
 'use strict'
 
-const free = require('./')
+const freeport = require('./function')
 
-// free(8090, () => {
-//   expect(free).toBeDefined()
-// })
-
-free('8090')
+const port = 8071;
+freeport(port)
+      .then(res => console.log(res))
+      .catch(error => console.error(error));
