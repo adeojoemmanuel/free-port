@@ -1,6 +1,6 @@
 const http = require('http');
 const freeport = require('./update');
-
+const ps = require('portscanner');
 const port = 8080;
 
 const server = http.createServer((req, res)  => {
@@ -11,8 +11,14 @@ const server = http.createServer((req, res)  => {
 
 server.listen(port, () => {
   setTimeout(() => {
-    freeport(port)
-      .then(res => console.log(res))
-      .catch(error => console.error(error));
+    // freeport(port)
+    //   .then(res => console.log(res))
+    //   .catch(error => console.error(error));
+    ps.checkPortStatus(port, (err, status)=>{
+		if(status == "open")
+			freeport(port).then((res)=>console.log(res)).catch(err=>console.log(err));
+		else
+			console.log(`Port ${port} is not currently running`);
+	});
   }, 1000);
 });
