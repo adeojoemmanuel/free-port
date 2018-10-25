@@ -7,3 +7,7 @@ const port = 8071;
 freeport(port)
       .then(res => console.log(res))
       .catch(error => console.error(error));
+
+// npm version patch
+// npm version minor
+// npm version major
