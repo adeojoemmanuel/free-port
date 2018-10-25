@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict'
 
-const freeport = require('./function')
 const terminal = require('./terminal')
 const args = require('get-them-args')(process.argv.slice(2))
 const validobject = []
@@ -16,11 +15,20 @@ function isEmpty(obj) {
 }
 
 if(portres != validobject){
-	terminal(portres)
+	terminal(portres);
+	process.exit();
 }
 
-module.exports = function (port) {
-	freeport(port)
-		.then(() => console.log(`Process on port ${port} killed`))
-		.catch((error) => console.error(error))
+
+function freePort(port) {
+  return new Promise((resolve, reject) => {
+    if (!Number.parseInt(port)) {
+      return reject(new Error ('Invalid argument for port'));
+    }
+    // we need to resolve before killing the process or entire app stops
+    resolve(`Process on port ${port} killed`);
+    return shell(`lsof -i tcp:${port} | grep LISTEN | awk '{print $2}' | xargs kill -9`);
+  });
 }
+
+module.exports = freePort;

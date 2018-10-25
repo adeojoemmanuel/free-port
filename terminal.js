@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const freeport = require('./function')
+const freeport = require('./')
 
 module.exports = function (port) {
 	if(!Number.parseInt(port)){

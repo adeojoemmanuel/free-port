@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict'
 
-const shell = require('execa').shell
 
 function freePort(port) {
   return new Promise((resolve, reject) => {
@@ -15,4 +14,3 @@ function freePort(port) {
 }
 
 module.exports = freePort;
-
