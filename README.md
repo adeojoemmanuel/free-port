@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-Freethenport is a module to help you kill running process on a port either using cli or running from withing your code.
+Freethenport is a module to  kill running process on a port either using cli or running from withing your code.
 
 
 ## Installation
