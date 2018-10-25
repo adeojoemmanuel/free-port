@@ -40,7 +40,9 @@ kill running porcess from your code
 
 * 1.0.0
     * Published on npm (module code lunched)
-* 1.0.0
+* 2.0.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 2.0.2
     * CHANGE: Update docs (module code remains unchanged)
 
 ## Meta
