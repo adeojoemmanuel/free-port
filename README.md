@@ -34,16 +34,7 @@ kill running porcess from your code
       .then(res => console.log(res))
       .catch(error => console.error(error));
 ```
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
 
 ## Release History
 
@@ -58,11 +49,11 @@ Adeojo Emmanuel – [@imm__immanuel](https://twitter.com/imm__immanuel) – emma
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/adeojoemmanuel/freeport](https://github.com/adeojoemmanuel/)
+[https://github.com/adeojoemmanuel/free-port](https://github.com/adeojoemmanuel/)
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (<https://github.com/adeojoemmanuel/free-port/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
