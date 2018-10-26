@@ -44,6 +44,8 @@ kill running porcess from your code
     * CHANGE: Update docs (module code remains unchanged)
 * 2.0.2
     * CHANGE: Update docs (module code remains unchanged)
+* 2.0.3
+    * Updated function nameing
 
 ## Meta
 
