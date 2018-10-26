@@ -1,4 +1,4 @@
-const freeport = require('./function');
+const freethenport = require('./function');
 const http = require('http');
 
 const port = 8080;
@@ -11,7 +11,7 @@ const server = http.createServer((req, res)  => {
 
 server.listen(port, () => {
   setTimeout(() => {
-    freeport(port)
+    freethenport(port)
       .then(res => console.log(res))
       .catch(error => console.error(error));
   }, 1000);

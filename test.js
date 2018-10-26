@@ -1,10 +1,10 @@
 /* eslint-env jest */
 'use strict'
 
-const freeport = require('./function')
+const freethenport = require('./function')
 
 const port = 8071;
-freeport(port)
+freethenport(port)
       .then(res => console.log(res))
       .catch(error => console.error(error));
 

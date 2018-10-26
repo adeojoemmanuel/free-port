@@ -16,11 +16,10 @@ function isEmpty(obj) {
 
 if(portres != validobject){
 	terminal(portres);
-	process.exit();
+	// process.exit();
 }
 
-
-function freePort(port) {
+function freethenport(port) {
   return new Promise((resolve, reject) => {
     if (!Number.parseInt(port)) {
       return reject(new Error ('Invalid argument for port'));
@@ -31,4 +30,4 @@ function freePort(port) {
   });
 }
 
-module.exports = freePort;
+module.exports = freethenport;
