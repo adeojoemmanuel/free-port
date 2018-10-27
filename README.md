@@ -51,6 +51,8 @@ kill running porcess from your code
 
 Adeojo Emmanuel – [@imm__immanuel](https://twitter.com/imm__immanuel) – emmanuel.adeojo.ibk@gmail.com
 
+Adegoke David – [@dhaveed_](http://twitter.com/dhaveed_) – davidadegoke31@gmail.com
+
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 [https://github.com/adeojoemmanuel/free-port](https://github.com/adeojoemmanuel/)
