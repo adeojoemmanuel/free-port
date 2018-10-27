@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>ActiveX Example 1.1 of SecuGen FDx Pro SDK </title>
+
+<script lang=javascript>
+<!--
+var aaa = 0;
+function fnOpenDevice(){
+    document.frmmain.objFP.DeviceID = document.frmmain.inc.value;
+    document.frmmain.objFP.CodeName = document.frmmain.dev.value;
+    document.frmmain.objFP.MinutiaeMode = document.frmmain.templateFormat.value;
+
+    // template format of objVerify should be the same to those of objFP[]
+    objVerify.MinutiaeMode = document.frmmain.templateFormat.value;
+    return;
+}
+
+function fnCapture(){
+    document.frmmain.objFP.Capture();
+    var result = document.frmmain.objFP.ErrorCode;
+alert(result);
+    if (result == 0)
+    {   
+        //var strimg1 = objFP.ImageTextData;    
+        var strmin = document.frmmain.objFP.MinTextData;
+alert(strmin);
+        document.frmmain.min.value = strmin;
+    }
+    else
+        alert('failed - ' + result);
+
+    return;
+}
+
+function fnRegister(){
+    var strmin1 = document.frmmain.min[0].value;
+    var strmin2 = document.frmmain.min[1].value;
+
+    if ( objVerify.RegisterForText(strmin1, strmin2) && objVerify.ErrorCode == 0 )
+        alert('success- registered');
+    else
+        alert('failed - ' + objVerify.ErrorCode);
+
+    return;
+}
+
+function fnVerifyEx(){   
+    var strmin1 = document.frmmain.min[0].value;
+    var strmin2 = document.frmmain.min[1].value;
+    var strmin3 = document.frmmain.min[2].value;
+
+    if ( objVerify.VerifyExForText(strmin1, strmin2, strmin3) && objVerify.ErrorCode == 0)
+        alert('Success - matched');
+    else
+        alert('Failed - ' + objVerify.ErrorCode);
+
+    return;
+}
+
+function fnVerify(){   
+    var strmin1 = document.frmmain.min[0].value;
+    var strmin2 = document.frmmain.min[2].value;
+
+    if ( objVerify.VerifyForText(strmin1, strmin2) && objVerify.ErrorCode == 0 )
+        alert('Success - matched');
+    else
+        alert('Failed - ' + objVerify.ErrorCode);
+
+    return;
+}
+
+function fnSetimage(){
+    document.frmmain.objFP.ImageTextData = document.frmmain.img1.value;
+
+    return;
+}
+// -->
+
+</script>
+</head>
+
+<body>
+<h4><b>ActiveX Example 1.1 of SecuGen FDx Pro SDK</b></h4>
+<p></p>
+
+<OBJECT id=objVerify style="LEFT: 0px; TOP: 0px" height=0 width=0 
+    classid="CLSID:8D613732-7D38-4664-A8B7-A24049B96117" 
+    name=objVerify VIEWASTEXT>
+</OBJECT>
+
+<form name=frmmain>
+
+Device Type :
+<select name=dev>
+<option value=0>FDP02
+<option value=1>FDU02
+<option value=2>FDU03
+<option value=3>FDU04
+<option selected value=4>FDU05
+
+</select>
+
+Instance No. :
+<select name=inc>
+<option value=-1>-1 
+<option value=0>0
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+
+<p>
+Template Format:
+<select name=templateFormat>
+<option value=256>ANSI 378
+<option value=512>SG 400
+<option value=768>ISO 19794-2
+</select>
+
+<input type=button name=open value='Open Device' OnClick='fnOpenDevice();'>
+<p>
+
+<table border=1 cellspacing=0 cellpadding=0>
+<caption> Fingerprint Images </caption>
+<tr>
+<td>
+    <OBJECT id=objFP style="LEFT: 0px; WIDTH: 149px; TOP: 0px; HEIGHT: 182px" height=182 
+        width=149 classid="CLSID:D547FDD7-82F6-44e8-AFBA-7553ADCEE7C8" name=objFP VIEWASTEXT>
+    <PARAM NAME="CodeName" VALUE="1">
+    </OBJECT>
+</td>
+</tr>
+<tr>
+<td align=center><input type=button name=btnCapture1 value='Capture' OnClick='fnCapture();'></td>
+</tr>
+</table>
+
+<p>
+
+min1 : <input type=text id=min name=min><br>
+<p>
+<input type=button name=btnRegister value='Register' OnClick='fnRegister();' style='width:200px'>
+<br>
+<input type=button name=btnVerify value='VerifyEx' OnClick='fnVerifyEx();' style='width:200px'>
+<br>
+<input type=button name=btnVerify value='Verify' OnClick='fnVerify();' style='width:200px'>
+
+</form>
+<script>
+fnOpenDevice();
+</script>
+</BODY>
+</HTML>
