@@ -1,6 +1,6 @@
 {
   "name": "freethenport",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "module to kill process on an occupied port ",
   "main": "index.js",
   "scripts": {
