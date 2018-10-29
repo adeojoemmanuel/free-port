@@ -46,6 +46,8 @@ kill running porcess from your code
     * CHANGE: Update docs (module code remains unchanged)
 * 2.0.3
     * Updated function nameing
+* 2.1.0
+    * Redeveloped kill port method in function.js
 
 ## Meta
 
