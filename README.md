@@ -53,6 +53,8 @@ Adeojo Emmanuel – [@imm__immanuel](https://twitter.com/imm__immanuel) – emma
 
 Adegoke David – [@dhaveed_](http://twitter.com/dhaveed_) – davidadegoke31@gmail.com
 
+John Foderaro - [@johnfoderaro]() - (johnfoderaro@icloud.com)
+
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 [https://github.com/adeojoemmanuel/free-port](https://github.com/adeojoemmanuel/)
