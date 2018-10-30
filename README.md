@@ -48,6 +48,8 @@ kill running porcess from your code
     * Updated function nameing
 * 2.1.0
     * Redeveloped kill port method in function.js
+* 2.3.0
+    * Added windows support
 
 ## Meta
 
