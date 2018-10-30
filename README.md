@@ -57,7 +57,7 @@ Adegoke David – [@dhaveed_](http://twitter.com/dhaveed_) – davidadegoke31@gm
 
 John Foderaro - [@johnfoderaro]() - (johnfoderaro@icloud.com)
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+ See [``LICENSE``](https://github.com/adeojoemmanuel/free-port/LICENSE) for more information.
 
 [https://github.com/adeojoemmanuel/free-port](https://github.com/adeojoemmanuel/)
 
